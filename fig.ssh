@@ -1,0 +1,4 @@
+{
+    "terminal.integrated.shell.osx": "/usr/local/bin/bash",
+    "terminal.integrated.fontFamily": "MesloLGS NF"
+}

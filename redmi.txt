@@ -1,0 +1,39 @@
+pip install transformers torch
+
+
+
+docker ps -a | grep telegram-bot
+docker rm telegram-bot
+docker run -d --name telegram-bot --env-file .env telegram-bot
+docker start telegram-bot
+docker run -d --name telegram-bot-new --env-file .env telegram-bot
+
+
+# Activate virtual environment (already active in your case)
+source .venv/bin/activate
+
+# Create requirements.txt if needed
+echo "python-telegram-bot>=20.0" > requirements.txt
+
+# Install from requirements file
+pip install -r requirements.txt
+
+
+
+
+pip show python-telegram-bot
+pip list | grep telegram
+
+
+
+
+
+
+
+
+
+
+exit Vim  
+
+wq
+
